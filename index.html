@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sixth G D | HTML </title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="container p-1">
+    <div class="row d-flex align-item-center justify-content-center">
+      <img class="logo image-fluid" src="https://cdn.shopify.com/s/files/1/0219/6550/4612/files/Update_3.gif?v=1676832375" alt="logo">
+    </div>
+  </div>
+  <!-- hearder end -->
+  <!-- Form start -->
+  <section>
+    <div class="container">
+      <div class="col-md-12 container bg-default">
+			
+        <h3 class="my-4">
+            Client Info
+        </h3>
+        
+        <form>
+          <div class="form col-md-6">
+            <div class="form-group p-2 m-1">
+              <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+  
+            <div class="form-group p-2 m-1">
+
+              <input type="text" class="form-control" id="storeName" placeholder="Store Name">
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+          </div>
+          <div class="form col-md-6">
+            <div class="form-group p-2 m-1">
+            <label for="phone"></label>
+            <input type="number" class="form-control" id="phone" placeholder="Phone" required>
+            </div>
+  
+            <div class="form-group p-2 m-1">
+              <input type="email" class="form-control" id="email" placeholder="Email" required>
+            </div>
+          </div>
+          <div class="form col-md-6">
+            <div class="form-group p-2 m-1">
+            <input type="text" class="form-control" id="adress" placeholder="Address" required>
+            <div class="invalid-feedback">
+              Please enter your shipping address.
+            </div>
+            </div>
+            <div class="form-group p-2 m-1">
+
+            <input type="text" class="form-control" id="city" placeholder="City">
+          </div>
+          <div class="form-group p-2 m-1">
+
+            <input type="text" class="form-control" id="zipcode" placeholder="Zipcode">
+          </div>
+          <div class="form-group p-2 m-1">
+
+            <input type="text" class="form-control" id="state" placeholder="State">
+          </div>
+          <div class="form-group p-2 m-1">
+
+            <input type="text" class="form-control" id="country" placeholder="Country">
+          </div>
+        </div>
+  
+          <hr>
+          
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="shipping-adress"> 
+              Shipping address is the same as my billing address
+            <label for="shipping-adress" class="form-check-label"></label>
+          </div>
+  
+          <hr>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Form end -->
+
+  <!-- Prices tabs start-->
+  <div class="container">
+      <h1> Price list Tabs </h1>
+    </a>
+    <p class="lead">
+      Switch brands products
+    </p>
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a href="#cbd" role="tab" data-toggle="tab"
+             class="nav-link active"> Experience CBD</a>
+        </li>
+        <li class="nav-item">
+          <a href="#rm" role="tab" data-toggle="tab"
+             class="nav-link"> Royal Mushroom </a>
+        </li>
+        <li class="nav-item">
+          <a href="#kratom" role="tab" data-toggle="tab"
+             class="nav-link"> Kratom</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" role="tabpanel" id="cbd">
+    <!-- Prices tabs start-->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                
+                <th scope="col">Product name</th>
+                <th scope="col">Variant</th>
+                <th scope="col">Tier</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">B_Full_Spectrum_CBD_Topicals_70mg_1000mg</th>
+                <td>Mini Gummy Bears</td>
+                <!-- price rate change by tier -->
+                <td><select class=" form-control" id="">
+                  <option>silver</option>
+                  <option>gold</option>
+                  <option>platinum</option>
+                </select></td>
+                
+                <td><input type="number"></td>
+                <td>
+                  <!-- the total calculate by quantity  -->
+                  <input type="number">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">D_CBD_Gummies_30mg_1800mg </th>
+                <td>Watermelon</td>
+                <!-- price rate change by tier -->
+                <td><select class=" form-control" id="">
+                  <option>silver</option>
+                  <option>gold</option>
+                  <option>platinum</option>
+                </select></td>
+                
+                <td><input type="number"></td>
+                <td>
+                  <!-- the total calculate by quantity  -->
+                  <input type="number">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">B_Full_Spectrum_CBD_Tinctures_500mg_3000mg</th>
+                <td>None</td>
+                <!-- price rate change by tier -->
+                <td><select class=" form-control" id="">
+                  <option>silver</option>
+                  <option>gold</option>
+                  <option>platinum</option>
+                </select></td>
+                
+                <td><input type="number"></td>
+                <td>
+                  <!-- the total calculate by quantity  -->
+                  <input type="number">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="tab-pane" role="tabpanel" id="rm">
+    <!-- Prices tabs start-->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                
+                <th scope="col">Product name</th>
+                <th scope="col">Variant</th>
+                <th scope="col">Tier</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Bootstrap 4 CDN and </th>
+                <td>Starter Template</td>
+                <!-- price rate change by tier -->
+                <td><select class=" form-control" id="">
+                  <option>silver</option>
+                  <option>gold</option>
+                  <option>platinum</option>
+                </select></td>
+                
+                <td><input type="number"></td>
+                <td>
+                  <!-- the total calculate by quantity  -->
+                  <input type="number">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Bootstrap 4 CDN and </th>
+                <td>Starter Template</td>
+                <!-- price rate change by tier -->
+                <td><select class=" form-control" id="">
+                  <option>silver</option>
+                  <option>gold</option>
+                  <option>platinum</option>
+                </select></td>
+                
+                <td><input type="number"></td>
+                <td>
+                  <!-- the total calculate by quantity  -->
+                  <input type="number">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Bootstrap 4 CDN and </th>
+                <td>Starter Template</td>
+                <!-- price rate change by tier -->
+                <td><select class=" form-control" id="">
+                  <option>silver</option>
+                  <option>gold</option>
+                  <option>platinum</option>
+                </select></td>
+                
+                <td><input type="number"></td>
+                <td>
+                  <!-- the total calculate by quantity  -->
+                  <input type="number">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="tab-pane" role="tabpanel" id="kratom">
+    <!-- Prices tabs start-->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                
+                <th scope="col">Product name</th>
+                <th scope="col">Variant</th>
+                <th scope="col">Tier</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Bootstrap 4 CDN and </th>
+                <td>Starter Template</td>
+                <!-- price rate change by tier -->
+                <td><select class=" form-control" id="">
+                  <option>silver</option>
+                  <option>gold</option>
+                  <option>platinum</option>
+                </select></td>
+                
+                <td><input type="number"></td>
+                <td>
+                  <!-- the total calculate by quantity  -->
+                  <input type="number">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Bootstrap 4 CDN and </th>
+                <td>Starter Template</td>
+                <!-- price rate change by tier -->
+                <td><select class=" form-control" id="">
+                  <option>silver</option>
+                  <option>gold</option>
+                  <option>platinum</option>
+                </select></td>
+                
+                <td><input type="number"></td>
+                <td>
+                  <!-- the total calculate by quantity  -->
+                  <input type="number">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Bootstrap 4 CDN and </th>
+                <td>Starter Template</td>
+                <!-- price rate change by tier -->
+                <td><select class=" form-control" id="">
+                  <option>silver</option>
+                  <option>gold</option>
+                  <option>platinum</option>
+                </select></td>
+                
+                <td><input type="number"></td>
+                <td>
+                  <!-- the total calculate by quantity  -->
+                  <input type="number">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- total -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 order-md-2 mb-4">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Your cart</span>
+        <span class="badge badge-secondary badge-pill">3</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Total</h6>
+          </div>
+          <span class="text-muted">$800</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Discount</h6>
+          </div>
+          <span class="text-muted">- $40</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-light">
+          <div >
+            <h6 class="my-0">Credit Card</h6>
+          </div>
+          <!-- Add credit card fee -->
+          <select name="addCreditFee" id="">
+            <option value="0">No</option>
+            <option value="0">1%</option>
+            <option value="0">3%</option>
+          </select>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Shipping</h6>
+          </div>
+          <span class="text-muted">0</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total (USD)</span>
+          <strong>$760</strong>
+        </li>
+      </ul>
+
+      <form class="card p-2">
+        <div class="input-group">
+          <div class="input-group-append">
+            <button type="submit" class="btn btn-secondary">Submit Order</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<!-- bootstrap JS -->
+
+
+<script
+src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous">
+</script>
+<script
+src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous">
+</script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+crossorigin="anonymous">
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>
